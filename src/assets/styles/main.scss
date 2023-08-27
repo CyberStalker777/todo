@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Главный контейнер приложения */
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Стили для формы создания задачи */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .todoapp__table-tf{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Стили для списка задач */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: rgb(2, 185, 185);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  body{
+    background: aqua;
+  }
+  
+  .todoapp {
+    font-family: Arial, sans-serif;
+    max-width: 350px;
+    min-height: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+  }
+  
+  .todoapp__title {
+    text-align: center;
+  }
+  
+  .todoapp__input {
+    margin-bottom: 10px;
+  }
+  
+  .inp{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 1px gray;
+  }
+  
+  .todoapp__inputs{
+    max-width: 360px;
+    width: 100%;
+    border: none;
+    background: rgb(240, 240, 240);
+    outline: none;
+  }
+  
+  
+  .todoapp__table {
+  display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .todoapp__table_dalet{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .activ1{
+    text-decoration: line-through;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .todoapp__table th,
+  .todoapp__table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .todoapp__table_center{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .todoapp__table th {
+    text-align: left;
+  }
+  
+  .count{
+    font-size: 14px;
+  }
+  
+  .todoapp__table .completed td {
+    background-color: #f0f0f0;
+  }
+  
+  .todoapp__buttons {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .todoapp__buttons button {
+    margin-right: 10px;
+  }
+  
+input[type="checkbox"] {
+    display: none; /* Скрыть саму галочку */
+  }
+  
+  // .activ + label {
+  //   position: relative;
+  //   padding-left: 25px;
+  //   cursor: pointer;
+  // }
+  
+  // .activ + label::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 18px;
+  //   height: 18px;
+  //   border: 2px solid #ccc;
+  //   clip-path: polygon(35% 15%, 15% 35%, 30% 50%, 50% 70%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  //   background: green;
+  // }
+  
+  
+  .activ{
+    background: rgb(2, 185, 185);
+  }
